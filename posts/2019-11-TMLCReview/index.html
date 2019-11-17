@@ -4,7 +4,7 @@
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Toronto Machine Learning Circles Review -- 2019 November Series</title>
+        <title>Toronto Machine Learning Circles Review - 2019 November Series</title>
         
         <link rel="stylesheet" href="../../fonts/Serif/cmun-serif.css" />
         <link rel="stylesheet" href="../../fonts/Serif-Slanted/cmun-serif-slanted.css" />
@@ -47,7 +47,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-49811703-1', 'colah.github.io');
+  ga('create', 'UA-49811703-1', 'torontodatascientistswithoutborder.github.io');
   ga('require', 'linkid', 'linkid.js');
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
@@ -67,7 +67,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand active" href="../../" style="font-size:20px;">colah's blog</a>
+                        <a class="navbar-brand active" href="../../" style="font-size:20px;">Toronto Machine Learning Circles Review</a>
                     </div>
                     <!--normal header-->
                     <div class="navbar-collapse collapse">
@@ -99,14 +99,39 @@
 <p>However, there remain a number of concerns about them. One is that it can be quite challenging to understand <em>what</em> a neural network is really doing. If one trains it well, it achieves high quality results, but it is challenging to understand how it is doing so. If the network fails, it is hard to understand what went wrong.</p>
 <p>While it is challenging to understand the behavior of deep neural networks in general, it turns out to be much easier to explore low-dimensional deep neural networks – networks that only have a few neurons in each layer. In fact, we can create visualizations to completely understand the behavior and training of such networks. This perspective will allow us to gain deeper intuition about the behavior of neural networks and observe a connection linking neural networks to an area of mathematics called topology.</p>
 <p>A number of interesting things follow from this, including fundamental lower-bounds on the complexity of a neural network capable of classifying certain datasets.</p>
-<h2 id="a-simple-example">A Simple Example</h2>
-<p>Let’s begin with a very simple dataset, two curves on a plane. The network will learn to classify points as belonging to one or the other.</p>
-<div class="centerimgcontainer">
-<img src="img/simple2_data.png" alt style>
-</div>
-<div class="spaceafterimg">
 
+<h2 id="section-data-wrangling"></h2>
+<a href="posts/2019-11-TMLCReview/data_wrangling/demo.ipynb">
+<div class="post">
+<img src="https://miro.medium.com/max/2258/1*JrxdGc7Psc4HK1rN-Cc9YA.png">
+<h3>Useful Data Wrangling Tricks</h3>
 </div>
+</a>
+
+<h2 id="section-ml-model-of-the-month"></h2>
+<a href="posts/2019-11-TMLCReview/data_wrangling/demo.ipynb">
+<div class="post">
+<img src="https://miro.medium.com/max/2258/1*JrxdGc7Psc4HK1rN-Cc9YA.png">
+<h3>Machine Learning Model of the Month</h3>
+</div>
+</a>
+                        
+<h2 id="section-feature-ml-doer-of-the-month"></h2>
+<a href="posts/2019-11-TMLCReview/data_wrangling/demo.ipynb">
+<div class="post">
+<img src="https://miro.medium.com/max/2258/1*JrxdGc7Psc4HK1rN-Cc9YA.png">
+<h3>Feature Machine Learning Hero of the Month</h3>
+</div>
+</a>
+                        
+<h2 id="section-misc-fun"></h2>
+<a href="posts/2019-11-TMLCReview/data_wrangling/demo.ipynb">
+<div class="post">
+<img src="https://miro.medium.com/max/2258/1*JrxdGc7Psc4HK1rN-Cc9YA.png">
+<h3>miscellaneous Fun of the Month</h3>
+</div>
+</a>
+                        
 <p>The obvious way to visualize the behavior of a neural network – or any classification algorithm, for that matter – is to simply look at how it classifies every possible data point.</p>
 <p>We’ll start with the simplest possible class of neural network, one with only an input layer and an output layer. Such a network simply tries to separate the two classes of data by dividing them with a line.</p>
 <div class="centerimgcontainer">
